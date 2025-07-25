@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-window.onload = function () {
+window.addEventListener = function () {
   const url = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/main/favicon.ico';
 
   let link = document.querySelector("link[rel='icon'], link[rel='shortcut icon']");
@@ -23,16 +23,16 @@ window.onload = function () {
   link.href = url;
 };
 
-window.onload = function () {
+window.addEventListener = function () {
   const header = document.querySelector('header'); 
   const img = document.querySelector('header img'); 
   const direitos = document.querySelector('header h2');
   const footer = document.querySelector('font');
   if(header){
+    header.boxSizing =  border-box;
     header.style.backgroundColor = '#10192e';
     header.style.color = '#ffffff';
     header.style.padding = 20;
-    header.boxSizing =  border-box;
   }
   if (img) {
     img.src = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/refs/heads/main/logo.png';       
