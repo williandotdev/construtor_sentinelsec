@@ -32,7 +32,9 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-const divs = Array.from(document.body.children).filter(el => el.tagName === 'DIV');
+document.addEventListener('DOMContentLoaded', () => {
+  const divs = Array.from(document.body.children).filter(el => el.tagName === 'DIV');
 if (divs.length >= 2) {
   divs[1].remove();
 }
+});
