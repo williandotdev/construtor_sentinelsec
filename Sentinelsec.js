@@ -10,18 +10,18 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-window.onload = function setFavicon() {
-  let link = document.querySelector("link[rel='icon']") || document.querySelector("link[rel='shortcut icon']");
+window.onload = () => {
+  const url = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/main/favicon.ico';
 
+  let link = document.querySelector("link[rel='icon'], link[rel='shortcut icon']");
   if (!link) {
     link = document.createElement('link');
     link.rel = 'icon';
     document.head.appendChild(link);
   }
-  // type="image/x-icon";
-  link.type ="image/x-icon";
-  link.href = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/refs/heads/main/favicon.ico';
-}
+  link.type = 'image/x-icon';
+  link.href = url;
+};
 
 window.onload = function () {
   const img = document.querySelector('header img'); 
