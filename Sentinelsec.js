@@ -32,7 +32,7 @@ window.onload = function () {
     header.style.backgroundColor = '#10192e';
     header.style.color = '#ffffff';
     header.style.padding = 20;
-    header.box-sizing =  border-box;
+    header.boxSizing =  border-box;
   }
   if (img) {
     img.src = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/refs/heads/main/logo.png';       
