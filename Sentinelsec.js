@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-window.onload = () => {
+window.onload = function () {
   const url = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/main/favicon.ico';
 
   let link = document.querySelector("link[rel='icon'], link[rel='shortcut icon']");
