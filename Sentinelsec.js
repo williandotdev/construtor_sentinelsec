@@ -20,7 +20,7 @@ window.onload = function setFavicon() {
   }
   // type="image/x-icon";
   link.type ="image/x-icon";
-  link.href = './Favicon.ico';
+  link.href = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/refs/heads/main/favicon.ico';
 }
 
 window.onload = function () {
