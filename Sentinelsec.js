@@ -1,4 +1,3 @@
-
 // Esconde o elemento de ID nessus-watermark-fill via CSS
 const style = document.createElement('style');
 style.innerText = '#nessus-watermark-fill { display: none !important; }';
@@ -10,6 +9,19 @@ window.addEventListener('DOMContentLoaded', () => {
         toggleAll(true);
     }
 });
+
+window.onload = function setFavicon() {
+  let link = document.querySelector("link[rel='icon']") || document.querySelector("link[rel='shortcut icon']");
+
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+  }
+  // type="image/x-icon";
+  link.type ="image/x-icon";
+  link.href = './Favicon.ico';
+}
 
 window.onload = function () {
   const img = document.querySelector('header img'); 
