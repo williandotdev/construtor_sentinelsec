@@ -31,6 +31,7 @@ window.onload = function () {
   if(header){
     header.style.backgroundColor = '#10192e';
     header.style.color = '#ffffff';
+    header.style.padding = 20;
   }
   if (img) {
     img.src = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/refs/heads/main/logo.png';       
