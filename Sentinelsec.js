@@ -3,16 +3,15 @@ const style = document.createElement('style');
 style.innerText = '#nessus-watermark-fill { display: none !important; }';
 document.head.appendChild(style);
 
-// Recolhe todas as seções ao carregar a página
+// Quando o DOM estiver carregado
 window.addEventListener('DOMContentLoaded', () => {
-    if (typeof toggleAll === 'function') {
-        toggleAll(true);
-    }
-});
+  // Recolhe todas as seções (se a função toggleAll existir)
+  if (typeof toggleAll === 'function') {
+    toggleAll(true);
+  }
 
-window.addEventListener = function () {
+  // Define favicon
   const url = './favicon.ico';
-
   let link = document.querySelector("link[rel='icon'], link[rel='shortcut icon']");
   if (!link) {
     link = document.createElement('link');
@@ -21,30 +20,30 @@ window.addEventListener = function () {
   }
   link.type = 'image/x-icon';
   link.href = url;
-};
 
-window.addEventListener = function () {
+  // Estiliza o header e altera conteúdos
   const header = document.querySelector('header'); 
   const img = document.querySelector('header img'); 
   const direitos = document.querySelector('header h2');
   const footer = document.querySelector('font');
-  if(header){
-    header.boxSizing =  border-box;
+
+  if (header) {
+    header.style.boxSizing = 'border-box';
     header.style.backgroundColor = '#10192e';
     header.style.color = '#ffffff';
-    header.style.padding = 20;
+    header.style.padding = '20px';
   }
+
   if (img) {
     img.src = './logo.png';       
     img.height = 100;            
   }
 
-  if(direitos) {
+  if (direitos) {
     direitos.textContent = "Relatório gerado por Sentinel Sec";
   }
-  
-  if(footer) {
+
+  if (footer) {
     footer.textContent = "© 2025 Sentinel Sec. Todos os direitos reservados.";
   }
-};
-
+});
