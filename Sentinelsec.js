@@ -35,6 +35,6 @@ window.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const divs = document.body.querySelectorAll('div');
   if (divs.length >= 2) {
-    divs[1].style.display = 'none';
+    divs[1].remove();
   }
 });
