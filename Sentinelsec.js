@@ -30,9 +30,7 @@ window.onload = function () {
   const footer = document.querySelector('font');
   if(header){
     header.style.backgroundColor = '#10192e';
-    header.style.position = 'fixed';
     header.style.color = '#ffffff';
-    header.style.top = '0';
   }
   if (img) {
     img.src = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/refs/heads/main/logo.png';       
