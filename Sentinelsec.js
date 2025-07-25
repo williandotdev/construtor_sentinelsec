@@ -10,22 +10,10 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleAll(true);
   }
 
-  // Define favicon
-  const url = './favicon.ico';
-  let link = document.querySelector("link[rel='icon'], link[rel='shortcut icon']");
-  if (!link) {
-    link = document.createElement('link');
-    link.rel = 'icon';
-    document.head.appendChild(link);
-  }
-  link.type = 'image/x-icon';
-  link.href = url;
-
   // Estiliza o header e altera conteúdos
   const header = document.querySelector('header'); 
   const img = document.querySelector('header img'); 
   const direitos = document.querySelector('header h2');
-  const footer = document.querySelector('font');
 
   if (header) {
     header.style.boxSizing = 'border-box';
@@ -35,15 +23,11 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   if (img) {
-    img.src = './logo.png';       
+    img.src = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/refs/heads/main/logo.png';       
     img.height = 100;            
   }
 
   if (direitos) {
     direitos.textContent = "Relatório gerado por Sentinel Sec";
-  }
-
-  if (footer) {
-    footer.textContent = "© 2025 Sentinel Sec. Todos os direitos reservados.";
   }
 });
