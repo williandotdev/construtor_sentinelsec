@@ -35,7 +35,7 @@ window.onload = function () {
     header.style.top = '0';
   }
   if (img) {
-    img.src = './logo.png';       
+    img.src = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/refs/heads/main/logo.png';       
     img.height = 100;            
   }
 
