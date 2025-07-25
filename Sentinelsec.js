@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener = function () {
-  const url = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/main/favicon.ico';
+  const url = './favicon.ico';
 
   let link = document.querySelector("link[rel='icon'], link[rel='shortcut icon']");
   if (!link) {
@@ -35,7 +35,7 @@ window.addEventListener = function () {
     header.style.padding = 20;
   }
   if (img) {
-    img.src = 'https://raw.githubusercontent.com/williandotdev/construtor_sentinelsec/refs/heads/main/logo.png';       
+    img.src = './logo.png';       
     img.height = 100;            
   }
 
