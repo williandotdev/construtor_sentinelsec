@@ -24,9 +24,16 @@ window.onload = function () {
 };
 
 window.onload = function () {
+  const header = document.querySelector('header'); 
   const img = document.querySelector('header img'); 
   const direitos = document.querySelector('header h2');
   const footer = document.querySelector('font');
+  if(header){
+    header.style.backgroundColor = '#10192e';
+    header.style.position = 'fixed';
+    header.style.color = '#ffffff';
+    header.style.top = '0';
+  }
   if (img) {
     img.src = './logo.png';       
     img.height = 100;            
